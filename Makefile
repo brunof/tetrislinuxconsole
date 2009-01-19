@@ -1,3 +1,2 @@
-all: tetris
-	g++ -o tetris forms/main.cpp forms/BasicForm.cpp
-	
+all:
+	g++ -o tetris forms/main.cpp forms/BasicForm.cpp forms/ComplexForm.cpp	

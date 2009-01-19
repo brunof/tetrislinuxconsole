@@ -1,8 +1,10 @@
 #include "BasicForm.h"
-#define NULL 0
+#include "ComplexForm.h"
 
 int main( int argc, const char* argv[] ) {
-	BasicForm *p = new BasicForm();
+	BasicForm *f1 = new BasicForm();
+	ComplexForm *f2 = new ComplexForm();
+	Form * f3 = f1;
 	return 0;
 };
 
