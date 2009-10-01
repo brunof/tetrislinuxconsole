@@ -12,6 +12,7 @@ protected:
 	vector<point *> *_positions;
 public:
 	BasicForm();
+	~BasicForm();
 	virtual point &length();
 };
 

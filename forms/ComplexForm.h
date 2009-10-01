@@ -11,6 +11,7 @@ class ComplexForm: public Form {
 	point *_length;
 public:
 	ComplexForm();
+	~ComplexForm();
 	virtual point &length() { return *(this->_length); };
 	void length(point &length) { this->_length = &length; };
 };
