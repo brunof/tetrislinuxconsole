@@ -2,12 +2,12 @@
 #define __COMPLEXFORM_h__
 
 #include "Form.h"
-#include <boost/numeric/ublas/vector.hpp>
+#include <vector>
 
-using namespace boost::numeric::ublas;
+using namespace std;
 
 class ComplexForm: public Form {
-	vector<Form *> &_forms;
+	vector<Form *> *_forms;
 	point *_length;
 public:
 	ComplexForm();
