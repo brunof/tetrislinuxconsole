@@ -11,10 +11,9 @@ else
 	viewer=evince
 endif
 
-BASICFORMS = forms/BasicForm.cpp \
-		forms/StickBasicForm.cpp \
-		forms/BoxBasicForm.cpp \
-		forms/SnakeBasicForm.cpp
+BASICFORMS = forms/basic/*BasicForm.cpp
+
+COMPLEXFORMS = forms/complex/ComplexForm.cpp
 
 all:
-	g++ -o tetris forms/main.cpp $(BASICFORMS) forms/ComplexForm.cpp
+	g++ -o tetris main.cpp $(BASICFORMS) $(COMPLEXFORMS)

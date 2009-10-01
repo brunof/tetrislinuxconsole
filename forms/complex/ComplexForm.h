@@ -1,7 +1,7 @@
 #ifndef __COMPLEXFORM_H__
 #define __COMPLEXFORM_H__
 
-#include "Form.h"
+#include "../Form.h"
 #include <vector>
 
 using namespace std;

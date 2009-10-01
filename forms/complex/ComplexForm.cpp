@@ -1,5 +1,5 @@
 #include "ComplexForm.h"
-#include "BasicForm.h"
+#include "../basic/BasicForm.h"
 
 ComplexForm::ComplexForm(): _forms(new vector<Form *>()) {
 }

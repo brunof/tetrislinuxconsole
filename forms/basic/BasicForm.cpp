@@ -1,5 +1,5 @@
 #include "BasicForm.h"
-#include "ComplexForm.h"
+#include "../complex/ComplexForm.h"
 
 BasicForm::BasicForm(): _positions(new vector<point *>()) {
 }

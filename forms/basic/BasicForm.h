@@ -1,7 +1,7 @@
 #ifndef __BASICFORM_H__
 #define __BASICFORM_H__
 
-#include "Form.h"
+#include "../Form.h"
 #include <vector>
 
 using namespace std;

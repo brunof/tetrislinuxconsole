@@ -1,8 +1,7 @@
-#include "BasicForm.h"
-#include "ComplexForm.h"
-#include "StickBasicForm.h"
-#include "BoxBasicForm.h"
-#include "SnakeBasicForm.h"
+#include "forms/complex/ComplexForm.h"
+#include "forms/basic/StickBasicForm.h"
+#include "forms/basic/BoxBasicForm.h"
+#include "forms/basic/SnakeBasicForm.h"
 
 int main( int argc, const char* argv[] ) {
 	BasicForm *bf1 = new StickBasicForm();
