@@ -1,5 +1,5 @@
 #ifndef __COMPLEXFORM_H__
-#define __COMPLEXFORM_h__
+#define __COMPLEXFORM_H__
 
 #include "Form.h"
 #include <vector>

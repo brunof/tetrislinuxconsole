@@ -12,7 +12,9 @@ else
 endif
 
 BASICFORMS = forms/BasicForm.cpp \
-		forms/StickBasicForm.cpp
+		forms/StickBasicForm.cpp \
+		forms/BoxBasicForm.cpp \
+		forms/SnakeBasicForm.cpp
 
 all:
 	g++ -o tetris forms/main.cpp $(BASICFORMS) forms/ComplexForm.cpp

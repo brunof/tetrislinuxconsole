@@ -1,5 +1,5 @@
 #ifndef __BASICFORM_H__
-#define __BASICFORM_h__
+#define __BASICFORM_H__
 
 #include "Form.h"
 #include <vector>
