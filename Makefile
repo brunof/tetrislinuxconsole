@@ -16,4 +16,4 @@ BASICFORMS = forms/basic/*BasicForm.cpp
 COMPLEXFORMS = forms/complex/ComplexForm.cpp
 
 all:
-	g++ -o tetris main.cpp $(BASICFORMS) $(COMPLEXFORMS)
+	g++ -o tetris main.cpp Player.cpp $(BASICFORMS) $(COMPLEXFORMS)
