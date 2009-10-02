@@ -2,10 +2,7 @@
 #include "forms/basic/BasicForm.h"
 #include "forms/complex/ComplexForm.h"
 
-Player::Player() {
-	this->_name = new string();
-	this->_nexts = new vector<BasicForm *>();
-	this->_block = new ComplexForm();
+Player::Player(): _name(new string()), _nexts(new vector<BasicForm *>()), _block(new ComplexForm()) {
 }
 
 Player::~Player() {

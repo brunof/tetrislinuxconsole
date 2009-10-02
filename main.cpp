@@ -3,6 +3,7 @@
 #include "forms/basic/SnakeBasicForm.h"
 #include "forms/complex/ComplexForm.h"
 #include "Player.h"
+#include "Game.h"
 #include <iostream>
 #include <string>
 #include <sstream>
@@ -22,6 +23,9 @@ int main( int argc, const char* argv[] ) {
 	bf2->mixWith(p1->block());
 	p1->block()->mixWith(bf3);
 	Form * f1 = bf1;
+	Game * g = new Game();
+	g->players()->push_back(p1);
+	delete g;
 	delete p1;
 	delete f1; // Borra a bf1 tambien.
 	delete bf2;
