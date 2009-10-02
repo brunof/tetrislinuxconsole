@@ -7,14 +7,16 @@ class Player;
 
 using namespace std;
 
+typedef vector<Player *> t_players;
+
 class Game {
-	vector<Player *> *_players;
+	t_players *_players;
 
 public:
 	Game();
 	~Game();
 	
-	vector<Player *> *players() { return this->_players; };
+	t_players *players() { return this->_players; };
 };
 
 #endif

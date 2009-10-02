@@ -5,17 +5,20 @@
 #include <vector>
 
 using namespace std;
+
+typedef vector<t_point *> t_points;
+
 class ComplexForm;
 
 class BasicForm: public Form {
 	int _graph;
-	vector<point *> *_positions;
+	t_points *_positions;
 public:
 	BasicForm();
 	~BasicForm();
 
-	virtual point &length();
-	vector<point *> * positions() { return this->_positions; };
+	virtual t_point *length();
+	t_points * positions() { return this->_positions; };
 
 	ComplexForm *mixWith(BasicForm *);
 	ComplexForm *mixWith(ComplexForm *);

@@ -9,9 +9,11 @@ class ComplexForm;
 
 using namespace std;
 
+typedef vector<BasicForm *> t_basicForms;
+
 class Player {
 	string *_name;
-	vector<BasicForm *> *_nexts;
+	t_basicForms *_nexts;
 	ComplexForm *_block;
 
 public:
@@ -21,7 +23,7 @@ public:
 	string *name() { return this->_name; };
 
 	ComplexForm *block() { return this->_block; };
-	vector<BasicForm *> *nexts() { return this->_nexts; };
+	t_basicForms *nexts() { return this->_nexts; };
 };
 
 #endif

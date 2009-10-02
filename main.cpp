@@ -22,14 +22,9 @@ int main( int argc, const char* argv[] ) {
 	p1->block()->mixWith(bf1);
 	bf2->mixWith(p1->block());
 	p1->block()->mixWith(bf3);
-	Form * f1 = bf1;
 	Game * g = new Game();
 	g->players()->push_back(p1);
 	delete g;
-	delete p1;
-	delete f1; // Borra a bf1 tambien.
-	delete bf2;
-	delete bf3;
 	return 0;
 };
 

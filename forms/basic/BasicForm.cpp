@@ -1,15 +1,15 @@
 #include "BasicForm.h"
 #include "../complex/ComplexForm.h"
 
-BasicForm::BasicForm(): _positions(new vector<point *>()) {
+BasicForm::BasicForm(): _positions(new t_points()) {
 }
 
-point &BasicForm::length() {
+t_point *BasicForm::length() {
 }
 
 BasicForm::~BasicForm() {
-	vector<point *> *v = this->positions();
-	for (vector<point *>::iterator it = v->begin(); it!=v->end(); ++it) {
+	t_points *v = this->positions();
+	for (t_points::iterator it = v->begin(); it!=v->end(); ++it) {
 		delete *it;
 	}
 	delete v;

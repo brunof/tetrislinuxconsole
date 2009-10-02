@@ -6,18 +6,20 @@
 
 using namespace std;
 
+typedef vector<Form *> t_forms;
+
 class BasicForm;
 
 class ComplexForm: public Form {
-	vector<Form *> *_forms;
-	point *_length;
+	t_forms *_forms;
+	t_point *_length;
 public:
 	ComplexForm();
 	~ComplexForm();
 
-	virtual point &length() { return *(this->_length); };
-	void length(point &length) { this->_length = &length; };
-	vector<Form *> * forms() { return this->_forms; };
+	virtual t_point *length() { return this->_length; };
+	void length(t_point *length) { this->_length = length; };
+	t_forms *forms() { return this->_forms; };
 
 	ComplexForm *mixWith(BasicForm *);
 	ComplexForm *mixWith(ComplexForm *);

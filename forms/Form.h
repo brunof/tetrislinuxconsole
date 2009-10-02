@@ -3,14 +3,14 @@
 
 #include "Point.hpp"
 
-typedef Point<char,char> point;
+typedef Point<char,char> t_point;
 
 class ComplexForm;
 class BasicForm;
 
 class Form {
 public:
-	virtual point &length() = 0;
+	virtual t_point *length() = 0;
 	virtual ComplexForm *mixWith(BasicForm *) = 0;
 	virtual ComplexForm *mixWith(ComplexForm *) = 0;
 };
