@@ -1,9 +1,9 @@
-#include "forms/basic/StickBasicForm.h"
-#include "forms/basic/BoxBasicForm.h"
-#include "forms/basic/SnakeBasicForm.h"
-#include "forms/complex/ComplexForm.h"
-#include "Player.h"
-#include "Game.h"
+#include "model/forms/basic/StickBasicForm.h"
+#include "model/forms/basic/BoxBasicForm.h"
+#include "model/forms/basic/SnakeBasicForm.h"
+#include "model/forms/complex/ComplexForm.h"
+#include "model/Player.h"
+#include "model/Game.h"
 #include <iostream>
 #include <string>
 #include <sstream>

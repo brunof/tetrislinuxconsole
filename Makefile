@@ -11,12 +11,12 @@ else
 	viewer=evince
 endif
 
-BASICFORMS = forms/basic/*BasicForm.cpp
+BASICFORMS = model/forms/basic/*BasicForm.cpp
 
-COMPLEXFORMS = forms/complex/ComplexForm.cpp
+COMPLEXFORMS = model/forms/complex/ComplexForm.cpp
 
 all:
-	@g++ -o tetris main.cpp Game.cpp Player.cpp $(BASICFORMS) $(COMPLEXFORMS)
+	@g++ -o tetris main.cpp model/Game.cpp model/Player.cpp $(BASICFORMS) $(COMPLEXFORMS)
 
 clean:
 	@rm -f tetris
