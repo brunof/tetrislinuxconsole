@@ -15,8 +15,15 @@ BASICFORMS = model/forms/basic/*BasicForm.cpp
 
 COMPLEXFORMS = model/forms/complex/ComplexForm.cpp
 
+FORMS = $(BASICFORMS) $(COMPLEXFORMS) \
+	model/FormFactory.cpp \
+
+GAME = $(FORMS) \
+	model/Game.cpp \
+	model/Player.cpp
+
 all:
-	@g++ -o tetris main.cpp model/Game.cpp model/Player.cpp $(BASICFORMS) $(COMPLEXFORMS)
+	@g++ -o tetris main.cpp $(GAME)
 
 clean:
 	@rm -f tetris
