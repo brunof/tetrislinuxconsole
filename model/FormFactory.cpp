@@ -17,9 +17,11 @@ void FormFactory::initializeFormDie() {
 }
 
 void FormFactory::initializePositionDie() {
+	//TODO: Create a list of points to be moved
 	//this->positionDie()->
 }
 
 BasicForm *FormFactory::makeNext() {
+	//TODO: Modify the obtained form variables: position, color, etc.
 	return this->formDie()->throwAndReturnCopy();
 }
